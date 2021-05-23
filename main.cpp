@@ -298,7 +298,7 @@ private:
         } sugarSetting, sizeSetting;
 
         enum type {
-            americano = 1, cappuccino = 2, latte_machiato = 3, mocha = 4, espresso = 5
+            americano = 1, cappuccino = 2, latte_machiato = 3, mocha = 4, espresso = 5, none = 6
         } coffeeType;
 
     };
