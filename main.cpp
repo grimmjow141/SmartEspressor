@@ -108,18 +108,7 @@ private:
         }
 
         if(value == "all"){
-            /// sugar
-            sugarSetting.name = "Blank";
-            sugarSetting.value = "None";
-            /// size
-            sugarSetting.name = "Blank";
-            sugarSetting.value = "None";
-
-            /// type
-            coffeeType = none;
-
-            /// TODO: aroma
-
+            espr.clean();
         }
 
         response.send(Http::Code::Ok, "Clean is Done!");
@@ -201,8 +190,8 @@ private:
             if (name == "size") {
                 sizeSetting.name = name;
 
-                if (value == "small" || value == "medium" || value == "large") {
-                    sizeSetting.value = value;
+                if (val == "small" || val == "medium" || val == "large") {
+                    sizeSetting.value = val;
                     return 1;
                 }
             }
@@ -270,6 +259,20 @@ private:
                 default:
                     return "";
             }
+        }
+
+        void clean(){
+            /// sugar
+            sugarSetting.name = "Blank";
+            sugarSetting.value = "None";
+            /// size
+            sugarSetting.name = "Blank";
+            sugarSetting.value = "None";
+
+            /// type
+            coffeeType = none;
+
+            /// TODO: aroma
         }
 
     private:
