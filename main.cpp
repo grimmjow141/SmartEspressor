@@ -107,7 +107,7 @@ private:
             val = value.as<std::string>();
         }
 
-        if(value == "all"){
+        if(val == "all"){
             espr.clean();
         }
 
