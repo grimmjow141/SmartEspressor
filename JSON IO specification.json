@@ -28,7 +28,6 @@
             {
                 "name":"Espressor option parameter value",
                 "description": "Parameter value for the setting chosen",
-                "_comment": "mai jos a schimbat Adrian",
                 "token-type":"string",
                 "byte-size":10,
                 "regex-rule": "[a-zA-Z]*",
@@ -39,7 +38,6 @@
         "2":{
             "token-delimitators": "",
             "protocol": "HTTP",
-            "_comment": "mai jos a schimbat Adrian",
             "prefix": "curl -XPOST 'http://127.0.0.1:9080/'",
             "buffer-tokens":[
             {
@@ -67,7 +65,6 @@
         "1":{
             "token-delimitators": "",
             "protocol": "HTTP",
-            "_comment": "mai jos a schimbat Adrian",
             "prefix": "curl -XGET 'http://127.0.0.1:9080/'",
             "buffer-tokens":[
             {
@@ -84,7 +81,6 @@
                 "token-type":"string",
                 "byte-size":10,
                 "regex-rule": "[a-zA-Z]*",
-                "_comment": "mai jos a schimbat Adrian",
                 "optional": false
             }
             ]
@@ -92,7 +88,6 @@
         "2":{
             "token-delimitators": "",
             "protocol": "HTTP",
-            "_comment": "mai jos a schimbat Adrian",
             "prefix": "curl -XGET 'http://127.0.0.1:9080/'",
             "buffer-tokens":[
             {
