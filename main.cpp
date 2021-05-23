@@ -190,8 +190,18 @@ private:
             if (name == "size") {
                 sizeSetting.name = name;
 
-                if (val == "small" || val == "medium" || val == "large") {
-                    sizeSetting.value = val;
+                if (val == "small") {
+                    sizeSetting.value = 1;
+                    return 1;
+                }
+
+                if(val == "medium"){
+                    sizeSetting.value = 2;
+                    return 1;
+                }
+
+                if(val == "large") {
+                    sizeSetting.value = 3;
                     return 1;
                 }
             }
@@ -264,10 +274,10 @@ private:
         void clean(){
             /// sugar
             sugarSetting.name = "Blank";
-            sugarSetting.value = "None";
+            sugarSetting.value = 0;
             /// size
             sugarSetting.name = "Blank";
-            sugarSetting.value = "None";
+            sugarSetting.value = 0;
 
             /// type
             coffeeType = none;
